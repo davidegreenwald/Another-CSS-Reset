@@ -1,0 +1,110 @@
+/**
+ * A small excerpt fork of Sanitize.css
+ *
+ * Compiled and edited by David Greenwald
+ * @link github.com/davidegreenwald
+ * @link davidgreenwald.com
+ *
+ * Credits:
+ *
+ * Sanitize.css | v.5.0.0
+ * @link github.com/jonathantneal/sanitize.css
+ * License: CC0
+ *
+ * Intended for use with the Scalpel.css reset and Normalized.css
+ */
+
+/* Begin #Sanitized.css
+   ========================================================================== */
+
+/**
+ *
+ * 1. Remove repeating backgrounds in all browsers (opinionated).
+ * 2. Add box sizing inheritence in all browsers (opinionated).
+ * Compatible with IE8+
+ * @link https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ */
+
+	 *,
+	 ::before,
+	 ::after {
+	 	background-repeat: no-repeat; /* 1 */
+	 	box-sizing: inherit; /* 2 */
+	 }
+
+/**
+ *
+ * 1. Remove the default vertical scrollbar in IE.
+ * 2. Change the resize direction on textareas in all browsers (opinionated).
+ */
+
+textarea {
+	overflow: auto; /* 1 */
+	resize: vertical; /* 2 */
+	 }
+
+/**
+ * Remove the text shadow on text selections (opinionated).
+ * 1. Restore the coloring undone by defining the text shadow (opinionated).
+ */
+
+::-moz-selection {
+	background-color: #b3d4fc; /* 1 */ /* Light Blue */
+	color: #000; /* 1 */ /* Black */
+	text-shadow: none;
+}
+
+::selection {
+	background-color: #b3d4fc; /* 1 */ /* Light Blue */
+	color: #000; /* 1 */ /* Black */
+	text-shadow: none;
+}
+
+/**
+ * Inherit styling in all browsers (opinionated).
+ * Edit: Removed font-weight, font-size, font-height, color
+ * duplicated in Scalpel.css
+ */
+
+button,
+input,
+select,
+textarea {
+	background-color: transparent;
+	line-height: inherit;
+}
+
+/**
+ * Remove the tapping delay on clickable elements (opinionated).
+ * 1. Remove the tapping delay in IE 10.
+ */
+
+a,
+area,
+button,
+input,
+label,
+select,
+summary,
+textarea,
+[tabindex] {
+	-ms-touch-action: manipulation; /* 1 */
+	touch-action: manipulation;
+}
+
+/**
+ * Change the cursor on busy elements (opinionated).
+ */
+
+[aria-busy="true"] {
+	cursor: progress;
+}
+
+/**
+ * Change the cursor on disabled, not-editable, or otherwise inoperable
+ * elements (opinionated).
+ */
+
+[aria-disabled] {
+	cursor: default;
+}

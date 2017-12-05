@@ -1,0 +1,103 @@
+/* ==========================================================================
+   #Scalpel.css
+   ========================================================================== */
+
+/**
+ * David Greenwald
+ * @link github.com/davidegreenwald
+ * @link davidgreenwald.com
+ *
+ * License: MIT
+ * @link https://en.wikipedia.org/wiki/MIT_License
+ * First release: 2017.10.24
+ *
+ * A new reset based specifically on modern browser UA (not a mass reset)
+ * This should reset *everything* to plain text.
+ * Add back in your own anchor colors, heading weights and more.
+ *
+ * The Scalpel.css reset is intended to be used with Normalize.css
+ */
+
+/* Begin #Scalpel
+   ========================================================================== */
+
+/* Reset box model */
+body,
+blockquote,
+dd,
+dl,
+fieldset,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+p,
+pre,
+ul {
+  margin: 0;
+}
+
+button,
+blockquote,
+fieldset,
+input,
+legend,
+ol,
+ul {
+  padding: 0;
+}
+
+/* Prevent table spacing */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Reset typography */
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+select,
+textarea {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+  color: inherit;
+  font-family: inherit;
+}
+
+/* Reset lists */
+ol, ul {
+  list-style: none;
+}
+
+/**
+ * Prevent quotes from generating around q and blockquote tags
+ * Edits: Removed ::before and ::after fallbacks... for Safari 3
+ *
+ * @link https://developer.mozilla.org/en-US/docs/Web/CSS/quotes
+ * @link http://www.paulchaplin.com/blog/css-reset-and-quirky-quotes
+ */
+
+blockquote, q {
+  quotes: none;
+}
+
+/* Reset form and iframe borders */
+button, iframe, input, fieldset {
+  border: 0;
+}

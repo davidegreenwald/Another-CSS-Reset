@@ -1,0 +1,12 @@
+# Editor Config
+root = true
+# applies to all files - this is a comment
+# EditorConfig uses regular expressions
+[*]
+end_of_line = lf
+# indent_style = space - set by Atom
+# indent_size = unset - set by Atom
+# could write this as indent_size = unset to use Atom default
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
